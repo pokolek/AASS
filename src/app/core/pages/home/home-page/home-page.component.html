@@ -1,0 +1,28 @@
+<div class="homepage">
+  <div class="banner">
+    <mat-card-header>
+      <!-- <mat-card-title color="primary"><h1>Welcome</h1></mat-card-title> -->
+    </mat-card-header>
+    <mat-card-content>
+      <div class="banner-text">
+        <h1>Unfolding Infinite Worlds, One Page at a Time.n</h1>
+        <p>
+          Embark on a literary journey where every turn of the page opens a door to worlds unknown.
+          At our library, each book is a portal to adventure, a friend waiting to converse, and wisdom waiting to unfold.
+          Here, you'll find a haven for your curiosity and a place to satisfy your thirst for adventures in prose. So, come and wander through our collection, borrow the book that whispers your name, and let your imagination bloom with every story. Welcome to our library, where your next grand tale awaits.
+        </p>
+        <img src="../../../../../assets/books.png" alt="">
+      </div>
+    </mat-card-content>
+  </div>
+  <div class="trending">
+    <mat-card-header>
+      <mat-card-title color="primary"><h1>Trending 🔥</h1></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngFor="let book of trendingBooks">
+        <app-trending-book-card [book]="book"></app-trending-book-card>
+      </div>
+    </mat-card-content>
+  </div>
+</div>

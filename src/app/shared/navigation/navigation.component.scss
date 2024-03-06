@@ -1,0 +1,10 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  span{
+    margin-right: 10px;
+  }
+}

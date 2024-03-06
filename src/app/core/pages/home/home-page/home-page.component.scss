@@ -1,0 +1,36 @@
+@import "../../../../../assets/styles/variables.scss";
+.homepage {
+  display: flex;
+  flex: 1 2 auto;
+  justify-content: space-around;
+  height: 100vh;
+
+  .mat-card {
+    max-width: 600px;
+    text-align: center;
+
+    .mat-card-actions {
+      justify-content: center;
+    }
+  }
+  
+  .trending {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  .banner {
+    width: 66%;
+    .banner-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    img {
+      width: 30vw;
+    }
+  }
+}
+

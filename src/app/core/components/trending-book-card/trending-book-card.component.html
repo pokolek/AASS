@@ -1,13 +1,17 @@
 <mat-card>
-    <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title>{{book.name}}</mat-card-title>
-        <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
-      </mat-card-title-group>
-    </mat-card-header>
-    <mat-card-content>
-      {{book.description}}
-    </mat-card-content>
-  </mat-card>
+  <div class="card-container">
+    <img mat-card-image src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781524879761/the-great-gatsby-9781524879761_xlg.jpg" >  
+    <div class="text">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{book.name}}</mat-card-title>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        {{book.description}}
+      </mat-card-content>
+    </div>
+  </div>
+</mat-card>
 
   

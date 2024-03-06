@@ -20,7 +20,7 @@ export class HomePageComponent implements OnInit{
     public trendingBooks: Book[] = [];
     ngOnInit(){
         this.trendingBooks = MOCK_BOOKS;
-        console.log(this.trendingBooks)
+        console.log(this.trendingBooks) 
     }
 
 }

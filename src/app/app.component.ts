@@ -1,16 +1,28 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet, Routes } from '@angular/router';
 import { NgSwitch, NgSwitchDefault, NgSwitchCase } from '@angular/common';
-import { HomePageComponent } from "./core/pages/home/home-page/home-page.component";
+import { HomeComponent } from "./core/pages/home-page/home.component";
 import { NavigationComponent } from '../app/shared/navigation/navigation.component'
-
+import { BooksComponent } from './core/pages/books/books.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     standalone: true,
-    imports: [NgSwitch, NgSwitchDefault, NgSwitchCase, RouterOutlet, HomePageComponent, NavigationComponent]
+    imports: [
+      NgSwitch,
+      NgSwitchDefault,
+      NgSwitchCase,
+      RouterOutlet,
+      HomeComponent,
+      NavigationComponent,
+      RouterModule,
+      MatToolbarModule,
+      MatButtonModule
+    ]
 })
 export class AppComponent {
-  title = 'AASS';
+  title = 'LibraryWeb';
 }

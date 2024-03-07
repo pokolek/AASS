@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -10,7 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
   standalone: true,
   imports: [
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ]
 })
 export class NavigationComponent {

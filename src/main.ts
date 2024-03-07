@@ -1,11 +1,10 @@
-import { importProvidersFrom } from '@angular/core';
 import { AppComponent } from './app/app.component';
-import { AppRoutingModule } from './app/app-routing.module';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
-
+import { provideRouter } from '@angular/router';
+import { routes } from './app/app-routing';
 
 bootstrapApplication(AppComponent, {
-    providers: [importProvidersFrom(BrowserModule, AppRoutingModule), provideAnimations()]
+    providers: [provideRouter(routes), provideAnimations()]
 })
   .catch(err => console.error(err));

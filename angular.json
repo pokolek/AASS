@@ -70,7 +70,8 @@
               "browserTarget": "AASS:build:production"
             },
             "development": {
-              "browserTarget": "AASS:build:development"
+              "browserTarget": "AASS:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

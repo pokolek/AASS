@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TrendingBookCardComponent } from './trending-book-card.component';
+import { BookCardComponent } from './book-card.component';
 
 describe('TrendingBookCardComponent', () => {
-  let component: TrendingBookCardComponent;
-  let fixture: ComponentFixture<TrendingBookCardComponent>;
+  let component: BookCardComponent;
+  let fixture: ComponentFixture<BookCardComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TrendingBookCardComponent]
+      declarations: [BookCardComponent]
     });
-    fixture = TestBed.createComponent(TrendingBookCardComponent);
+    fixture = TestBed.createComponent(BookCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

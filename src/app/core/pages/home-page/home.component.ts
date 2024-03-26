@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { TrendingBookCardComponent } from "../../components/trending-book-card/trending-book-card.component";
+import { TrendingBookCardComponent } from "../../components/trending-book-card/book-card.component";
 import { Book } from 'src/app/core/models/book.model';
 import { MOCK_BOOKS } from 'src/assets/mock/books.mock';
 import { CommonModule } from '@angular/common';

@@ -1,9 +1,9 @@
-.example-card {
-    max-width: 300px;
-    max-height: 300px;
-}
-  
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+.book-card {
+    width: 200px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This helps push the button to the bottom */
+    height: 100%; /* Set a height to create space for the button at the bottom */  
 }

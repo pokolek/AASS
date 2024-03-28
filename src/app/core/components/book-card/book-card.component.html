@@ -1,17 +1,13 @@
-<mat-card class="example-card">
+<mat-card *ngIf="book" class="book-card">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      <mat-card-title>{{book.book_title}}</mat-card-title>
+      <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+      <p>{{book.description}}</p>
     </mat-card-content>
-    <mat-card-actions>
-        <button mat-raised-button color="accent">Rent</button>
+    <mat-card-actions class="buttons">
+      <button *ngIf="book.available" routerLink="/books" mat-raised-button (click)="rentBook(book)" color="accent">Rent</button>
+      <button *ngIf="!book.available" mat-raised-button disabled="true" color="accent">Rent</button>
     </mat-card-actions>
 </mat-card>

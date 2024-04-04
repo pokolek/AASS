@@ -13,6 +13,10 @@ export class BooksService {
     return this.http.get('api/books');
   }
 
+  getTrendingBooks(): Observable<any>{
+    return this.http.get('api/trending');
+  }
+
   rentBook(book: Book){
     console.log(book);
     const formattedDate = new Date().toISOString().slice(0, 10);

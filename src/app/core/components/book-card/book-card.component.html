@@ -7,7 +7,7 @@
       <p>{{book.description}}</p>
     </mat-card-content>
     <mat-card-actions class="buttons">
-      <button *ngIf="book.available" routerLink="/books" mat-raised-button (click)="rentBook(book)" color="accent">Rent</button>
+      <button *ngIf="book.available" routerLink="/home" mat-raised-button (click)="rentBook(book)" color="accent">Rent</button>
       <button *ngIf="!book.available" mat-raised-button disabled="true" color="accent">Rent</button>
     </mat-card-actions>
 </mat-card>
